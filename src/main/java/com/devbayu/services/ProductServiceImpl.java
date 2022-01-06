@@ -15,7 +15,6 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void getData() throws IOException {
         Document document = Jsoup.connect("https://www.tokopedia.com/p/handphone-tablet/handphone?page=1").get();
-        System.out.println(document.title());
 
         Elements elements = document.getElementsByClass("css-bk6tzz e1nlzfl3");
 
